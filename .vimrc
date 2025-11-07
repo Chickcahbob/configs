@@ -101,3 +101,5 @@ if has('persistent_undo')
   let &undodir = myUndoDir
   set undofile
 endif
+
+map <Leader>h :lua require("harpoon.mark").add_file()
