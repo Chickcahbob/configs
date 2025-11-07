@@ -16,7 +16,7 @@ filetype plugin on
 filetype indent on
 
 " Enable syntax highlighting
-syntx on
+syntax on
 
 " Add numbers to left
 set number
@@ -55,7 +55,7 @@ set ignorecase
 set smartcase
 
 " Show partial command
-set shocmd
+set showcmd
 
 " Show the current mode
 set showmode
@@ -73,7 +73,7 @@ set wildmenu
 set wildmode=list:longest
 
 " Put plugins and dictionaries in this directory
-let vimDir = '$HOME/.vim"
+let vimDir = "$HOME/.vim"
 
 if stridx(&runtimepath, expand(vimDir)) == -1
   " Add vimDir to runtime path if it is not already there
