@@ -1,13 +1,15 @@
 " Disable compatibility with vi
 set nocompatible
 
-" Enable file detection
+" Disable file detection prior to adding plugins
 filetype off
+
+" Set leader key to <SPACE>
+let mapleader = " "
 
 " Install plugins
 " Install vim-plug if necessary
 " https://github.com/junegunn/vim-plug
-
 call plug#begin()
 
 " List plugins here
@@ -16,9 +18,8 @@ Plug 'ThePrimeagen/harpoon'
 
 call plug#end()
 
-
-" Set leader key to <SPACE>
-let mapleader = " "
+" Re-enable filetypes
+filetype on
 
 " Enable filetype plugins
 filetype plugin on
