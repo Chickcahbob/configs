@@ -102,4 +102,4 @@ if has('persistent_undo')
   set undofile
 endif
 
-map <Leader>h :lua require("harpoon.mark").add_file()
+map <Leader>h :lua require("harpoon.mark").add_file() <Enter>
