@@ -86,6 +86,6 @@ if has('persistent_undo')
   " Create directories
   call system('mkdir ' . vimDir)
   call system('mkdir ' . myUndoDir)
-  let &undodir = myUndoDIr
+  let &undodir = myUndoDir
   set undofile
 endif
