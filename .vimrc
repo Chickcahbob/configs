@@ -2,7 +2,12 @@
 set nocompatible
 
 " Enable file detection
-filetype on
+filetype off
+
+" Add plugins here
+
+" Set leader key to <SPACE>
+let mapleader = " "
 
 " Enable filetype plugins
 filetype plugin on
