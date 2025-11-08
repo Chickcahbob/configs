@@ -84,11 +84,3 @@ if has('persistent_undo')
   let &undodir = myUndoDir
   set undofile
 endif
-
-" Harpoon keybindings
-map <Leader>h :lua require("harpoon.mark").add_file() <Enter> " Harpoon current file
-map <Leader>t :lua require("harpoon.ui").toggle_quick_menu() <Enter> " Open Harpoon menu
-map <Leader>1 :lua require("harpoon.ui").nav_file(1) <Enter> " Navigate to page 1
-map <Leader>2 :lua require("harpoon.ui").nav_file(2) <Enter> " Navigate to page 2
-map <Leader>3 :lua require("harpoon.ui").nav_file(3) <Enter> " Navigate to page 3
-map <Leader>4 :lua require("harpoon.ui").nav_file(4) <Enter> " Navigate to page 4
