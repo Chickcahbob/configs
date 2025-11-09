@@ -71,7 +71,7 @@ set wildmode=list:longest
 set undofile
 
 " Set undo file directory
-let undodir = '$HOME/.vim/undodir
+let undodir = '$HOME/.vim/undodir'
 
 " Install plugins
 "Install vim-plug if necessary
