@@ -67,8 +67,11 @@ set wildmenu
 " Make wildmenu befave similar to Bash completion
 set wildmode=list:longest
 
-" Put plugins and dictionaries in this directory
-let vimDir = "$HOME/.vim"
+" Enable undo files
+set undofile
+
+" Set undo file directory
+let undodir = '$HOME/.vim/undodir
 
 " Install plugins
 "Install vim-plug if necessary
