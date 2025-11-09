@@ -82,6 +82,7 @@ call plug#begin('~/.config/nvim/plugged')
 Plug 'nvim-lua/plenary.nvim' " don't forget to add this one if you don't have it yet!
 Plug 'ThePrimeagen/harpoon'
 Plug 'nvim-telescope/telescope.nvim', {'tag': '0.1.8'}
+Plug 'mason-org/mason.nvim'
 
 call plug#end()
 
