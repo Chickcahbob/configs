@@ -230,4 +230,12 @@ require('mason-lspconfig').setup{
   })
   vim.lsp.enable('<YOUR_LSP_SERVER>')
 
+-- TODO: Override vim deprecate function, remove later when lsp pluggin is updated
+vim.deprecate = (function(overriden)
+  return function(_, _, _, xx)
+    if xx == 'nvim-lspconfig' then return end
+    return overriden(_, _, _, xx)
+  end
+end)(vim.deprecate)
+
 EOF
