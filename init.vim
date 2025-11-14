@@ -115,6 +115,9 @@ call plug#end()
 " Set leader key to <SPACE>
 let mapleader = " "
 
+" Switch to directory view keybindings
+nnoremap <Leader>s :Ex <cr>
+
 " Harpoon keybindings
 nnoremap <Leader>h :lua require("harpoon.mark").add_file() <cr> " Harpoon current file
 nnoremap <Leader>g :lua require("harpoon.ui").toggle_quick_menu() <cr> " Open Harpoon menu
