@@ -74,7 +74,7 @@ set undofile
 set undodir =~/.vim/undodir
 
 " Send file name being edited to tmux
-autocmd BufReadPost,FileReadPost,BufNewFile * call system("tmux rename-window " . expand("%"))
+autocmd BufReadPost,FileReadPost,BufNewFile * call system("tmux rename-window " . expand("%:t"))
 
 " Install plugins
 "Install vim-plug if necessary
